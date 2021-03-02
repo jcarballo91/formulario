@@ -1,0 +1,93 @@
+* {
+  /* Eliminar Espacios */
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Darle color al fondo y con fuente de letra */
+body {
+  background: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Definiendo los valores de nuestro formulario */
+.registerform {
+  background: #fff;
+
+  width: 500px;
+  margin: 20px auto; /*Permite dar un margen de 20px arriba y abajo; con auto nos permite centrar horizontalmente automaticamente.*/
+  border-radius: 5px; /*Le damos un redondeo de 5px*/
+}
+
+/*Personalizando nuestro encabezado REGISTER*/
+.registerform h2 {
+  background: #2b57ee;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Alineamos nuestros elemento de inputs uno del bajo del otro ya que son de tipo linea */
+.registerform input {
+  display: block;
+}
+
+/*Ubicar al lado izquierdo el check lo cual permita que el texto se encuente a la derecha.*/
+.registerform input[type="checkbox"] {
+  display: inline;
+}
+
+/*Personalizando  nuestros inputs*/
+.registerform input[type="text"],
+.registerform input[type="email"],
+.registerform input[type="password"] {
+  width: 100%; /*que ocupen todo el ancho del form*/
+  padding: 20px; /*que tenga un espacio interno de 20px */
+  margin-bottom: 20px; /*espacio entre los inputs de 20px*/
+  border-radius: 3px;
+  border: 1px solid #226fc1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/*Personalizando nuestro Submit*/
+.registerform input[type="submit"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  background: #2b57ee;
+  border: 1px solid #226fc1;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  /* border-radius: 3px; */
+}
+
+/* Personalizando: Already a member? Sign in */
+.registerform p {
+  width: 40%;
+  margin: 10px auto;
+}
+
+/*que se resalte un borde cuando pase el mouse por el boton Sign up*/
+.registerform input[type="submit"]:hover {
+  border: 2.5px solid rgb(110, 118, 228);
+}
+
+/*Una vez que de click en los cuadros de texto se mantenga resaltado el borde*/
+.registerform input[type="text"]:focus,
+.registerform input[type="email"]:focus,
+.registerform input[type="password"]:focus {
+  border: 2.5px solid #226fc1;
+}
+
+/*Cuando pase el mouse por los cuadros de texto que se resalte los bordes de los cuadros de texto*/
+.registerform input[type="text"]:hover,
+.registerform input[type="email"]:hover,
+.registerform input[type="password"]:hover {
+  border: 2.5px solid #226fc1;
+}
